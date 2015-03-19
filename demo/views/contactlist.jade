@@ -1,0 +1,27 @@
+extends layout
+
+block content
+	h1.
+		Contact List
+	table
+		thead
+		tr.head
+			th First Name
+			th Last Name
+			th Title 
+			th Company
+			th Email
+			th Where met
+			th Date met
+			th comments
+		tbody
+		each contacts in contactlist
+			tr
+				td #{contacts.first}
+				td #{contacts.last}
+				td #{contacts.title}
+				td #{contacts.company}
+				td #{contacts.email}
+				td #{contacts.met}
+				td #{contacts.date}
+				td #{contacts.comments}
